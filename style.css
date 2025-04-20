@@ -1,0 +1,260 @@
+/* Set the image as the background for the entire page */
+.index {
+    background-image: url('Princeton University.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    margin: 0; /* Removes default margin */
+    min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+/* Set Oxford University as the background for the guide page */
+.guide {
+    background-image: url('oxford university.jpg'); /* Replace with the actual path to the image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Ensure the background covers the full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+}
+.apply {
+    background-image: url('royal holloway university.jpg'); /* Replace with the actual image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures the background covers the full viewport height */
+    color: #fff; /* Optional: Adjust text color for better contrast */
+}
+/* Style for the search bar and button */
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+}
+
+.searchTerm {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchButton {
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchButton i {
+    margin: 0;
+}
+.searchTerm:hover{
+    background: #04fd29ef;
+    color: #fff;
+}
+i{
+    color: black;
+}
+/* Style for the navigation bar */
+.navbar {
+    background-color: green; /* Green background */
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: white; /* White background on hover */
+    color: green; /* Green text on hover */
+    border-radius: 5px;
+}
+.prehumble{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Adjust the logo to match the search bar size and style */
+/* Adjust the logo to be slightly larger for better visibility */
+.logo {
+    width: 350px; /* Increase the width */
+    height: 350px; /* Increase the height */
+    border-radius: 20px; /* Keep the rounded border */
+    border: 2px solid #ccc; /* Keep the border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green; /* Background color for the logo */
+    color: white; /* Text color for "bridge way" */
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    margin: 10px auto; /* Center the logo horizontally and add spacing */
+}
+
+/* Add the text "bridge way" inside the logo */
+.logo::before {
+    content: "bridge way"; /* Add the text */
+}
+/* Style for the "Get Started" button */
+.get-started {
+    text-align: center;
+    margin: 20px 0; /* Add spacing around the button */
+}
+
+.get-started-button {
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 18px; /* Font size for the text */
+    font-weight: bold; /* Bold text */
+    border-radius: 25px; /* Rounded borders */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.get-started-button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    padding: 20px 0; /* Add vertical spacing */
+    text-align: center; /* Center-align text and content */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer p {
+    margin: 10px 0; /* Add spacing around the text */
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+.social-icons {
+    margin-top: 10px; /* Add spacing above the icons */
+}
+
+.social-icon {
+    display: inline-block; /* Display icons inline */
+    margin: 0 10px; /* Add spacing between icons */
+    color: white; /* White icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    color: #04fd29; /* Change icon color on hover */
+}
+/* Style for the guide content */
+.guide-content {
+    color: white; /* Set text color to white */
+    text-align: left; /* Align text to the left for readability */
+    padding: 20px; /* Add padding for spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent black background for contrast */
+    border-radius: 10px; /* Rounded corners for a clean look */
+    max-width: 800px; /* Limit the width of the content */
+    margin: 20px auto; /* Center the content horizontally and add vertical spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    line-height: 1.6; /* Improve readability with proper line spacing */
+}
+/* Sticky Apply Icon */
+.apply-icon {
+    position: fixed; /* Make it sticky */
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 20px; /* Position it 20px from the right */
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Add padding for size */
+    font-size: 16px; /* Font size for the text */
+    font-weight: bold; /* Bold text */
+    border-radius: 50px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.apply-icon i {
+    font-size: 18px; /* Icon size */
+}
+
+.apply-icon:hover {
+    background-color: darkgreen; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.founder-image {
+    float: right;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0 10px 20px; /* Add spacing around the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.africa-map {
+    float: right;
+    margin-left: 20px; /* Optional: Adds space between the image and the text */
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+}
