@@ -253,7 +253,7 @@ i{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 .mitchell-image {
-    float: left;
+    float: right;
     width: 200px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0 10px 20px; /* Add spacing around the image */
