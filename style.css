@@ -244,8 +244,16 @@ i{
     background-color: #218838; /* Darker green on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
-.founder-image {
+.deraka-image {
     float: right;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0 10px 20px; /* Add spacing around the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.mitchell-image {
+    float: left;
     width: 200px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0 10px 20px; /* Add spacing around the image */
